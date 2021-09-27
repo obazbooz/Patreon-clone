@@ -1,0 +1,123 @@
+.nav-wrapper .brand-logo {
+  margin-left: 5px;
+  color: black;
+}
+
+.nav-wrapper ul {
+  position: relative;
+  left: 80px;
+}
+
+.nav-wrapper ul li a {
+  color: black;
+}
+
+.nav-wrapper .login {
+  position: relative;
+  left: 700px;
+}
+
+form #search-nav {
+  position: relative;
+  background-color: rgb(219, 210, 210);
+  left: 200px;
+  border-radius: 10em;
+}
+
+.nav-wrapper {
+  display: flex;
+  background-color: white;
+}
+.waves-effect {
+  position: relative;
+  top: 15px;
+  left: 90px;
+}
+
+.login-btn {
+  position: relative;
+  left: 200px;
+}
+
+.nav-wrapper .btn {
+  position: relative;
+  left: 350px;
+  border-radius: 50em;
+}
+
+/* ***************************************************** */
+
+/* main */
+main .landing {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+  padding: 100px;
+  background-color: rgb(20 21 24);
+}
+
+main .landing .landing-img {
+  width: 500px;
+  min-height: 500px;
+  order: 2;
+}
+
+main .landing .landing-intro {
+  width: 500px;
+  /* flex-grow: 1; */
+  min-height: 500px;
+}
+
+main .landing .landing-intro h2 {
+  color: red;
+}
+
+main .landing .landing-intro p {
+  color: white;
+}
+
+main .landing .landing-intro a {
+  border-radius: 50em;
+  left: 0em;
+}
+
+/* search sec */
+
+.search-sec {
+  min-height: 20em;
+}
+
+.search-sec .search-content {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-content: normal;
+}
+
+.search-sec .search-content .search-bar-container {
+  display: flex;
+  background-color: rgb(214 209 209 / 80%);
+  border-radius: 50em;
+  padding: 10px;
+}
+
+.search-sec .search-content .search-bar-container i {
+  order: 1;
+  width: 10px;
+  position: relative;
+  top: 18px;
+  left: 15px;
+}
+
+.search-sec .search-content .search-bar-container input {
+  order: 2;
+  width: 500px;
+  margin: 8px;
+}
+
+.search-sec .search-content .btn {
+  order: 1;
+  width: 90px;
+  border-radius: 50em;
+}
