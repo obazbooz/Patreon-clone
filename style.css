@@ -6,6 +6,8 @@ section {
 .nav-wrapper .brand-logo {
   margin-left: 5px;
   color: black;
+  top: 7px;
+  left: 10px;
 }
 
 .nav-wrapper ul {
@@ -50,6 +52,11 @@ form #search-nav {
   border-radius: 50em;
 }
 
+/* #searching-nav {
+  background-color: gray;
+  border-radius: 50em;
+} */
+
 /* ***************************************************** */
 
 /* main */
@@ -62,19 +69,31 @@ form #search-nav {
 .landing .landing-content {
   display: flex;
   flex-flow: wrap;
-  justify-content: space-evenly;
-  align-content: space-around;
+  justify-content: space-between;
+  /* align-content: space-around; */
+  min-height: 400px;
 }
 
-.landing .container .landing-content .landing-img {
-  width: 400px;
+.landing .landing-content .landing-img {
+  position: relative;
+  width: calc(90% / 2);
   order: 2;
+  margin: auto;
 }
 
-main .landing .landing-intro {
+.landing .container .landing-content .landing-img img {
   width: 400px;
-  /* flex-grow: 1; */
-  min-height: 500px;
+}
+
+.landing .container .landing-content .landing-img a {
+  position: absolute;
+  top: 75px;
+  left: 175px;
+}
+
+.landing .landing-content .landing-intro {
+  width: calc(90% / 2);
+  margin: auto;
 }
 
 main .landing .landing-intro h2 {
@@ -90,10 +109,30 @@ main .landing .landing-intro a {
   left: 0em;
 }
 
+@media (max-width: 750px) {
+  .landing .landing-content .landing-img {
+    width: 90%;
+  }
+
+  .landing .landing-content .landing-intro {
+    width: 90%;
+    margin-bottom: 100px;
+  }
+
+  .landing .container .landing-content .landing-img img {
+    width: 99%;
+  }
+}
+
 /* search sec */
 
 .search-sec {
   min-height: 200px;
+}
+
+.search-sec h3 {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .search-sec .search-content {
@@ -107,27 +146,53 @@ main .landing .landing-intro a {
   display: flex;
   background-color: rgb(214 209 209 / 80%);
   border-radius: 50em;
-  padding: 10px;
+  width: 75%;
 }
 
 .search-sec .search-content .search-bar-container i {
   order: 1;
-  width: 10px;
   position: relative;
-  top: 18px;
+  top: 20px;
   left: 15px;
 }
 
 .search-sec .search-content .search-bar-container input {
   order: 2;
-  width: 500px;
-  margin: 8px;
+  width: 90%;
+  position: relative;
+  left: 35px;
 }
 
 .search-sec .search-content .btn {
   order: 1;
   width: 90px;
   border-radius: 50em;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+@media (max-width: 750px) {
+  .search-sec .search-content {
+    flex-flow: column;
+  }
+
+  .search-sec .search-content .search-bar-container {
+    width: 100%;
+  }
+
+  .search-sec .search-content .search-bar-container input {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .search-sec .search-content .btn {
+    width: 80%;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* Introduction section  */
@@ -154,7 +219,7 @@ main .landing .landing-intro a {
   width: calc(96% / 2);
 }
 
-.introduction-sec .part2 .article-text-right {
+#second-art-text {
   width: calc(96% / 2);
   order: 2;
 }
@@ -163,35 +228,74 @@ main .landing .landing-intro a {
   width: 100%;
 }
 
-@media (max-width: 1024px) {
-}
-@media (max-width: 600px) {
+@media (max-width: 750px) {
+  .introduction-sec .part2 article {
+    /* flex-flow: column; */
+    width: 100%;
+    justify-content: center;
+  }
+  .introduction-sec .part2 .article-text {
+    width: 100%;
+  }
+
+  #second-art-text {
+    width: 100%;
+  }
+
+  #second-art-card {
+    width: 100%;
+    order: 2;
+  }
+
+  .introduction-sec .part2 .article-card {
+    width: 100%;
+  }
 }
 /*  */
 /* Domains section */
 
 .domains-sec .domains-intro {
   text-align: center;
+  margin-bottom: 5rem;
 }
 
 .domains-sec .domains-list {
   display: flex;
+  flex-flow: wrap;
   justify-content: space-between;
   align-content: center;
 }
 .domains-sec .domains-list .domains-list-img {
-  width: 40%;
+  width: calc(95% / 2);
 }
 .domains-sec .domains-list .domains-list-img img {
   width: 100%;
 }
 
 .domains-sec .domains-list .domains-list-ul {
-  width: 40%;
+  width: calc(95% / 2);
+  text-align: center;
+  font-size: larger;
+  font-weight: 800;
 }
 
 .domains-sec .domains-list .domains-list-ul ul {
   width: 100%;
+}
+
+@media (max-width: 750px) {
+  .domains-sec .domains-list {
+    flex-flow: column-reverse;
+  }
+
+  .domains-sec .domains-list .domains-list-img {
+    width: 100%;
+  }
+
+  .domains-sec .domains-list .domains-list-ul {
+    width: 100%;
+    order: 1;
+  }
 }
 
 /* ************************************ */
@@ -202,22 +306,43 @@ main .landing .landing-intro a {
   text-align: center;
 }
 .pricing-sec img {
-  width: 600px;
+  width: 99%;
+  margin: 10px;
 }
 
 /* ********* */
 
 /* Usecases Section */
+
 .usecase-sec h2 {
   text-align: center;
+  margin-bottom: 70px;
 }
 
 .usecase-sec .usecase-holder {
   display: flex;
-  text-align: center;
+  justify-content: space-evenly;
   align-content: space-around;
+  flex-flow: wrap;
 }
 
 .usecase-sec .usecase-holder .usecase {
-  width: 800px;
+  width: calc(100% / 3);
+}
+
+.usecase-sec .usecase-holder .usecase .col {
+  width: 100%;
+}
+
+@media (max-width: 750px) {
+  .usecase-sec .usecase-holder .usecase {
+    width: 100%;
+  }
+}
+
+/*  */
+
+/* Footer section */
+.page-footer {
+  background-color: rgb(20 21 24);
 }
