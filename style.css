@@ -1,6 +1,14 @@
 section {
-  margin-top: 90px;
-  margin-bottom: 90px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-family: Rubik, sans-serif;
+  font-size: 40px;
 }
 /* ************* */
 .nav-wrapper .brand-logo {
@@ -66,12 +74,16 @@ form #search-nav {
   /* width: 100%; */
 }
 
+.landing .container {
+  width: 80%;
+}
+
 .landing .landing-content {
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
   /* align-content: space-around; */
-  min-height: 400px;
+  min-height: 35rem;
 }
 
 .landing .landing-content .landing-img {
@@ -82,13 +94,15 @@ form #search-nav {
 }
 
 .landing .container .landing-content .landing-img img {
-  width: 400px;
+  width: 33.8rem;
+  height: 17.8rem;
+  align-self: center;
 }
 
 .landing .container .landing-content .landing-img a {
   position: absolute;
-  top: 75px;
-  left: 175px;
+  top: 116px;
+  left: 230px;
 }
 
 .landing .landing-content .landing-intro {
@@ -96,12 +110,15 @@ form #search-nav {
   margin: auto;
 }
 
-main .landing .landing-intro h2 {
-  color: red;
+main .landing .landing-intro h1 {
+  color: rgb(255, 66, 77);
+  font-weight: 700;
+  width: 32rem;
 }
 
 main .landing .landing-intro p {
   color: white;
+  font-size: 20px;
 }
 
 main .landing .landing-intro a {
@@ -110,6 +127,10 @@ main .landing .landing-intro a {
 }
 
 @media (max-width: 750px) {
+  .landing .landing-content {
+    min-height: 55rem;
+  }
+
   .landing .landing-content .landing-img {
     width: 90%;
   }
@@ -130,10 +151,13 @@ main .landing .landing-intro a {
   min-height: 200px;
 }
 
-.search-sec h3 {
+/* .search-sec h2 {
   text-align: center;
   margin-bottom: 50px;
-}
+  font-weight: 700;
+  font-family: Rubik, sans-serif;
+  font-size: 40px;
+} */
 
 .search-sec .search-content {
   display: flex;
@@ -199,6 +223,23 @@ main .landing .landing-intro a {
 .introduction-sec .part1 {
   position: relative;
   text-align: center;
+  margin-bottom: 70px;
+}
+
+/* .introduction-sec .part1 h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-family: Rubik, sans-serif;
+  font-size: 40px;
+} */
+
+.introduction-sec .part1 p {
+  font-size: 1.5rem;
+  line-height: 2;
+  text-align: center;
+  font-weight: 400;
+  padding: 10px;
 }
 
 .introduction-sec .part2 {
@@ -209,14 +250,63 @@ main .landing .landing-intro a {
   flex-flow: wrap;
   justify-content: space-between;
   align-content: center;
+  margin-bottom: 40px;
 }
 
 .introduction-sec .part2 .article-text {
   width: calc(96% / 2);
 }
 
+.introduction-sec .part2 .article-text h4 {
+  color: rgb(255, 66, 77);
+  font-weight: 700;
+}
+
+.introduction-sec .part2 .article-text p {
+  font-weight: 400;
+}
+
 .introduction-sec .part2 .article-card {
   width: calc(96% / 2);
+}
+/* .introduction-sec .part2 .article-card .card-action a {
+  color: black;
+} */
+
+.card
+  .card-action
+  a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+  color: #000000;
+  text-transform: none;
+}
+.z-depth-1,
+nav,
+.card-panel,
+.card,
+.toast,
+.btn,
+.btn-large,
+.btn-small,
+.btn-floating,
+.dropdown-content,
+.collapsible,
+.sidenav {
+  box-shadow: none;
+}
+
+.card .card-content {
+  padding: 5px;
+}
+
+.card .card-action {
+  padding: 16px 5px;
+}
+
+.card .card-content p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 #second-art-text {
@@ -259,6 +349,18 @@ main .landing .landing-intro a {
   margin-bottom: 5rem;
 }
 
+.domains-sec .domains-intro p {
+  color: rgb(36, 30, 18);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  font-size: 1.125rem;
+  line-height: 2;
+  text-align: center;
+  font-weight: 400 !important;
+  width: 80%;
+}
+
 .domains-sec .domains-list {
   display: flex;
   flex-flow: wrap;
@@ -267,20 +369,45 @@ main .landing .landing-intro a {
 }
 .domains-sec .domains-list .domains-list-img {
   width: calc(95% / 2);
+  margin-top: 40px;
 }
 .domains-sec .domains-list .domains-list-img img {
   width: 100%;
 }
 
 .domains-sec .domains-list .domains-list-ul {
-  width: calc(95% / 2);
+  width: calc(75% / 2);
   text-align: center;
-  font-size: larger;
-  font-weight: 800;
 }
 
 .domains-sec .domains-list .domains-list-ul ul {
   width: 100%;
+}
+
+.domains-sec .domains-list .domains-list-ul ul {
+  padding: 0.5rem 0rem;
+  margin: 0rem;
+  color: rgb(177, 172, 163);
+  transition-duration: 1s;
+  width: fit-content;
+  font-weight: 700;
+}
+
+.domains-sec .domains-list .domains-list-ul ul li {
+  padding: 0.5rem 0rem;
+  margin: 0rem;
+  color: rgb(177, 172, 163);
+  transition-duration: 1s;
+  width: 100%;
+  font-family: Rubik, sans-serif;
+  font-weight: 700;
+}
+
+.domains-sec .domains-list .domains-list-ul ul li:hover {
+  padding: 0.5rem 0rem;
+  margin: 0rem;
+  color: black;
+  border-bottom: 2px solid black;
 }
 
 @media (max-width: 750px) {
@@ -305,9 +432,17 @@ main .landing .landing-intro a {
 .pricing-sec {
   text-align: center;
 }
+
+.pricing-sec p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+}
+
 .pricing-sec img {
   width: 99%;
-  margin: 10px;
+  margin-top: 40px;
+  box-shadow: 0 10px 20px 0px grey;
 }
 
 /* ********* */
