@@ -51,7 +51,8 @@ form #search-nav {
 
 .login-btn {
   position: relative;
-  left: 200px;
+  left: 130px;
+  color: black;
 }
 
 .nav-wrapper .btn {
@@ -63,6 +64,15 @@ form #search-nav {
 /* #searching-nav {
   background-color: gray;
   border-radius: 50em;
+} */
+
+/* @media (max-width: 975px) {
+  .nav-wrapper .log-and-seach .waves-effect {
+    left: 100%;
+  }
+
+  .nav-wrapper .log-and-seach .login-btn {
+    left: 90;
 } */
 
 /* ***************************************************** */
@@ -422,6 +432,10 @@ nav,
   .domains-sec .domains-list .domains-list-ul {
     width: 100%;
     order: 1;
+    margin: auto;
+  }
+  .domains-sec .domains-list .domains-list-ul ul {
+    margin: auto;
   }
 }
 
@@ -480,4 +494,49 @@ nav,
 /* Footer section */
 .page-footer {
   background-color: rgb(20 21 24);
+}
+
+.page-footer .row h5 {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.page-footer .row ul li a {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#footer-location {
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+#footer-location div {
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 2px solid white;
+  margin-bottom: 5px;
+  width: 80%;
+}
+
+/* .page-footer .footer-part1 {
+  display: flex;
+  flex-direction: column-reverse;
+} */
+
+/* .page-footer .footer-part1 .footer-links {
+  width: 100%;
+} */
+
+.page-footer .footer-part1 .social-media i {
+  size: 0.5rem;
+}
+
+@media (max-width: 750px) {
+  #footer-location div {
+    width: 50%;
+    justify-self: center;
+  }
 }
