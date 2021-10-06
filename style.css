@@ -1,3 +1,4 @@
+/* ******************Global Style section************************************ */
 section {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -10,7 +11,10 @@ section {
   font-family: Rubik, sans-serif;
   font-size: 40px;
 }
-/* ************* */
+/* ******************End Of Global Style Section************************* */
+
+/* ******************Navigation Style section************************************ */
+
 .nav-wrapper .brand-logo {
   margin-left: 5px;
   color: black;
@@ -20,16 +24,16 @@ section {
 
 .nav-wrapper ul {
   position: relative;
-  left: 80px;
+  left: 5%;
 }
 
 .nav-wrapper ul li a {
   color: black;
 }
 
-.nav-wrapper .login {
+.nav-wrapper .login-and-great {
   position: relative;
-  left: 700px;
+  margin-left: 1%;
 }
 
 form #search-nav {
@@ -61,27 +65,28 @@ form #search-nav {
   border-radius: 50em;
 }
 
-/* #searching-nav {
-  background-color: gray;
-  border-radius: 50em;
-} */
-
-/* @media (max-width: 975px) {
-  .nav-wrapper .log-and-seach .waves-effect {
-    left: 100%;
+@media (max-width: 975px) {
+  .nav-wrapper .login-and-great {
+    margin-left: 40%;
   }
+}
 
-  .nav-wrapper .log-and-seach .login-btn {
-    left: 90;
-} */
+@media (max-width: 750px) {
+  .nav-wrapper .login-and-great {
+    margin-left: 20%;
+  }
+}
 
-/* ***************************************************** */
+@media (max-width: 570px) {
+  .nav-wrapper .login-and-great {
+    margin-left: -10%;
+  }
+}
+/* ******************End of Navigation Style section************************************ */
 
-/* main */
+/* ******************Landing Style section************************************ */
 .landing {
-  /* padding: 100px; */
   background-color: rgb(20 21 24);
-  /* width: 100%; */
 }
 
 .landing .container {
@@ -92,7 +97,6 @@ form #search-nav {
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
-  /* align-content: space-around; */
   min-height: 35rem;
 }
 
@@ -104,15 +108,15 @@ form #search-nav {
 }
 
 .landing .container .landing-content .landing-img img {
-  width: 33.8rem;
-  height: 17.8rem;
-  align-self: center;
+  width: 500px;
 }
 
 .landing .container .landing-content .landing-img a {
   position: absolute;
-  top: 116px;
-  left: 230px;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
 
 .landing .landing-content .landing-intro {
@@ -155,19 +159,19 @@ main .landing .landing-intro a {
   }
 }
 
-/* search sec */
+@media (max-width: 570px) {
+  main .landing .landing-intro h1 {
+    width: 25rem;
+  }
+}
+
+/* ******************End of Landing Style section************************************ */
+
+/* ******************Search Style section************************************ */
 
 .search-sec {
   min-height: 200px;
 }
-
-/* .search-sec h2 {
-  text-align: center;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-family: Rubik, sans-serif;
-  font-size: 40px;
-} */
 
 .search-sec .search-content {
   display: flex;
@@ -213,36 +217,36 @@ main .landing .landing-intro a {
 
   .search-sec .search-content .search-bar-container {
     width: 100%;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
   }
 
   .search-sec .search-content .search-bar-container input {
-    width: 70%;
+    width: 80%;
+    max-width: 70%;
+    align-content: center;
     margin-left: auto;
     margin-right: auto;
   }
 
   .search-sec .search-content .btn {
-    width: 80%;
+    width: 100%;
+    max-width: 70%;
     align-content: center;
     margin-left: auto;
     margin-right: auto;
   }
 }
+/* ******************End of Search Style section************************************ */
 
-/* Introduction section  */
+/* ******************Introduction Style section************************************ */
 .introduction-sec .part1 {
   position: relative;
   text-align: center;
   margin-bottom: 70px;
 }
-
-/* .introduction-sec .part1 h2 {
-  text-align: center;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-family: Rubik, sans-serif;
-  font-size: 40px;
-} */
 
 .introduction-sec .part1 p {
   font-size: 1.5rem;
@@ -279,9 +283,6 @@ main .landing .landing-intro a {
 .introduction-sec .part2 .article-card {
   width: calc(96% / 2);
 }
-/* .introduction-sec .part2 .article-card .card-action a {
-  color: black;
-} */
 
 .card
   .card-action
@@ -319,7 +320,7 @@ nav,
   line-height: 1.5;
 }
 
-#second-art-text {
+.introduction-sec .part2 article #second-art-text {
   width: calc(96% / 2);
   order: 2;
 }
@@ -330,7 +331,6 @@ nav,
 
 @media (max-width: 750px) {
   .introduction-sec .part2 article {
-    /* flex-flow: column; */
     width: 100%;
     justify-content: center;
   }
@@ -338,11 +338,11 @@ nav,
     width: 100%;
   }
 
-  #second-art-text {
+  .introduction-sec .part2 article #second-art-text {
     width: 100%;
   }
 
-  #second-art-card {
+  .introduction-sec .part2 article #second-art-card {
     width: 100%;
     order: 2;
   }
@@ -351,9 +351,9 @@ nav,
     width: 100%;
   }
 }
-/*  */
-/* Domains section */
+/* ******************End of Introduction Style section************************************ */
 
+/* ******************Domains Style section************************************ */
 .domains-sec .domains-intro {
   text-align: center;
   margin-bottom: 5rem;
@@ -439,10 +439,9 @@ nav,
   }
 }
 
-/* ************************************ */
+/* ******************End of Domains Style section************************************ */
 
-/* Pricing */
-
+/* ******************Pricing Style section************************************ */
 .pricing-sec {
   text-align: center;
 }
@@ -459,10 +458,9 @@ nav,
   box-shadow: 0 10px 20px 0px grey;
 }
 
-/* ********* */
+/* ******************End of Pricing Style section************************************ */
 
-/* Usecases Section */
-
+/* ******************Usecases Style section************************************ */
 .usecase-sec h2 {
   text-align: center;
   margin-bottom: 70px;
@@ -489,9 +487,9 @@ nav,
   }
 }
 
-/*  */
+/* ******************End of usecases Style section************************************ */
 
-/* Footer section */
+/* ******************Footer Style section************************************ */
 .page-footer {
   background-color: rgb(20 21 24);
 }
@@ -521,15 +519,6 @@ nav,
   width: 80%;
 }
 
-/* .page-footer .footer-part1 {
-  display: flex;
-  flex-direction: column-reverse;
-} */
-
-/* .page-footer .footer-part1 .footer-links {
-  width: 100%;
-} */
-
 .page-footer .footer-part1 .social-media i {
   size: 0.5rem;
 }
@@ -540,3 +529,4 @@ nav,
     justify-self: center;
   }
 }
+/* ******************End of footer Style section************************************ */
